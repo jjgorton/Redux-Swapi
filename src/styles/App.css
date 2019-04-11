@@ -1,28 +1,100 @@
 .App {
-  text-align: center;
+	text-align: center;
+	margin: 0 auto;
+	background-image: url('https://backgroundcheckall.com/wp-content/uploads/2017/12/star-field-background-8.jpg');
 }
 
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 80px;
+.CharactersList_wrapper {
+	margin: 0 auto;
 }
 
-.App-header {
-  background-color: #222;
-  height: 150px;
-  padding: 20px;
-  color: white;
+ul {
+	/* background: black; */
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	margin-top: 200px;
 }
 
-.App-title {
-  font-size: 1.5em;
+li {
+	/* background: black; */
+	color: yellow;
+	display: block;
+	position: relative;
+	/* width: 200px; */
+	margin: 0px;
+	text-align: center;
+	font-size: 00px;
+	/* transform: translateY(400px); */
+
+	animation-name: scroll;
+	animation-duration: 30s;
 }
 
-.App-intro {
-  font-size: large;
+/* .first {
+	font-size: 450px;
+	opacity: 0;
+	position: fixed;
+} */
+
+.Luke {
+	animation-delay: 2s;
+	/* transform: translateY(400px); */
 }
 
-@keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+.C-3PO {
+	animation-delay: 4s;
+}
+
+.R2-D2 {
+	animation-delay: 6s;
+}
+
+.Darth {
+	animation-delay: 8s;
+}
+
+.Leia {
+	animation-delay: 10s;
+}
+
+.Owen {
+	animation-delay: 12s;
+}
+
+.Beru {
+	animation-delay: 14s;
+}
+
+.R5-D4 {
+	animation-delay: 16s;
+}
+
+.Biggs {
+	animation-delay: 18s;
+}
+
+.Obi-Wan {
+	animation-delay: 20s;
+}
+
+@keyframes scroll {
+	0% {
+		font-size: 250px;
+		/* transform: translateY(400px); */
+		transform: rotateX(70deg);
+		margin: 100px 0 20px 0;
+	}
+	10% {
+		opacity: 1;
+	}
+
+	100% {
+		font-size: 0px;
+		/* transform: translateY(00px); */
+		transform: rotateX(70deg);
+		margin: 0px;
+	}
 }
